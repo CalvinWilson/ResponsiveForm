@@ -1,0 +1,102 @@
+body {
+	background: #4eaef6;
+}
+
+form {
+	color: white;
+	margin-bottom: 50px;
+	font: sans-serif;
+}
+
+#leftcolumn {
+	width:400px;
+	float: left;
+}
+
+#centercolumn {
+	width:400px;
+	float: left;
+}
+
+#rightcolumn {
+	width: 400px;
+	float: left;
+}
+
+p{
+	margin: 30px;
+}
+
+input, textarea, select {
+	width: 300px;
+	background: #4eaef6;
+	border: 2px white solid;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-family:sans-serif;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    color: #1b3690;
+}
+
+input, select {
+	height: 20px;
+}
+
+input, textarea {
+	color:white;
+}
+
+input:focus{
+	border: 2px #1b3690 solid;
+	animation-name: focus;
+	animation-duration: 5s;
+}
+textarea:focus{
+	border: 2px #1b3690 solid;
+	animation-name: focus;
+	animation-duration: 5s;
+}
+select:focus{
+	border: 2px #1b3690 solid;
+	animation-name: focus;
+	animation-duration: 5s;
+}
+
+input:hover{
+	animation-name: hover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+textarea:hover{
+	animation-name: hover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+select:hover{
+	animation-name: hover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hover {
+    0%   {background-color: #4eaef6;}
+    20%  {background-color: purple;}
+    40%  {background-color: red;}
+    60%  {background-color: yellow;}
+    80%  {background-color: green;}
+    100% {background-color: #4eaef6;}
+}
+
+@keyframes focus {
+	0%	{border: 2px solid #1b3690;}
+	50% {border: 3px solid green;}
+	100%{border: 4px solid orange;}
+}
